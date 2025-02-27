@@ -89,6 +89,9 @@ int main() {
     // Run your class on this code and calculate the difference of Julian number below
 
     cout.precision(20);
+
+    //Two dates x and y are given below 
+    
     JulianDate x(2007, 2, 8, 0, 0, 0); // how many days since day 0? dy = (2018 - 2000) * 365
     double x1 = x.calc_juliandate();
     cout << x1 << endl;
@@ -107,11 +110,14 @@ int main() {
     // Now use your class function to find the difference between two dates
     // print out the result
     // write your code here
-    
+
+    // calls the member function diff_calc_juliandate on the object x of the JulianDate class.
+
     double diff = x.diff_calc_juliandate(x, y);
     cout << "Class function: " << diff << endl; 
+    
 
-    // Calls the member function diff_calc_juliandate on the object x, using x as the context for the call.
+
 
     //example of date to Julian date format without hour/min/sec
     //7/4/1776   2369916
